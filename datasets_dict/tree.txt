@@ -1,0 +1,54 @@
+.
+├── CIFAR10
+│ └── cifar-10-batches-py
+│   ├── batches.meta
+│   ├── data_batch_1
+│   ├── data_batch_2
+│   ├── data_batch_3
+│   ├── data_batch_4
+│   ├── data_batch_5
+│   ├── readme.html
+│   └── test_batch
+├── CIFAR100
+│ └── cifar-100-python
+│   ├── file.txt~
+│   ├── meta
+│   ├── test
+│   └── train
+├──   CUB
+│ └── CUB_200_2011
+│   ├── attributes
+│   ├── attributes.txt
+│   ├── bounding_boxes.txt
+│   ├── classes.txt
+│   ├── image_class_labels.txt
+│   ├── images
+│   ├── images.txt
+│   ├── parts
+│   ├── README
+│   └── train_test_split.txt
+├── EMNIST
+│ └──EMNIST
+│   ├── processed
+│   └── raw
+├── KMNIST
+│ └──KMNIST
+│   ├── processed
+│   └── raw
+├── MNIST
+│ └──MNIST
+│   ├── processed
+│   └── raw
+├── places365
+│ └── places365_standard
+│   ├── train
+│   ├── train.txt
+│   ├── val
+│   └── val.txt
+└── tinyimagenet
+ └──tiny-imagenet-200
+   ├── test
+   ├── train
+   ├── val
+   ├── wnids.txt
+   └── words.txt
