@@ -1,0 +1,10 @@
+o:0
+ki:1
+su:2
+tsu:3
+na:4
+ha:5
+ma:6
+ya:7
+re:8
+wo:9
