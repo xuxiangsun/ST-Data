@@ -9,10 +9,13 @@ This repo contains the code for our CVPR 2022 paper "[Exploring Effective Data f
 
 #### :sparkles: News
 
-**[Nov 27, 2023]**
-Thanks very much for the attention of many peers! Next, we plan to gradually update our code. It is expected that the code will be updated completely after **a full review cycle of the extended version of our CVPR work** is reached. Please wait patiently.
+**[Dec 06, 2023]**
+- Codes updating is underway. The codes regarding utils are updated.
 
-#### **Citation**
+**[Nov 27, 2023]**
+- Thanks very much for the attention of many peers! Next, we plan to gradually update our code. It is expected that the code will be updated completely after **a full review cycle of the extended version of our CVPR work** is reached. Please wait patiently.
+
+#### :blue_book: Citation
 If you think this repository may be helpful to you, please consider giving a star :star: and citation. Thanks for your consideration.
 ```
 @inproceedings{sun2022exploring,
@@ -23,7 +26,7 @@ If you think this repository may be helpful to you, please consider giving a sta
   year={2022}
 }
 ```
-#### System Environment
+#### :page_facing_up: System Environment
 
 * CUDA: CUDA 11.3
 * CUDNN: CUDNN 8.2.1
@@ -33,7 +36,8 @@ If you think this repository may be helpful to you, please consider giving a sta
 * Python: 3.8.17
 * Torchvision: 0.13.0
 
-#### Prepare the required packages
+### :bookmark_tabs: Quick Start
+#### 1. Preparing the required packages
 
 To install the python environment, please run:
 
@@ -41,17 +45,9 @@ To install the python environment, please run:
 conda env create -f ./stdata.yaml
 ```
 
-Tips:  If you can not install the whole packages in condalist.yml, you can check which package can not be downloaded and shield it first. Then, running
+Also, we provide the packages installed via pip. Please refer to `./stdata_pip.txt`.
 
-```
-conda env create -f ./stdata.yaml
-```
-
-to install other packages.
-
-Next, you can download and install these shielded packages manually. Also, we provide the packages installed via pip. Please refer to `./stdata_pip.txt`.
-
-#### Tips
+:point_right: **Tips**
 After installing the environment directly, "advertorch" could report an error because of the following code:
 ```
 from torch.autograd.gradcheck import zero_gradients
@@ -62,18 +58,18 @@ from torch.autograd.gradcheck import zero_gradients
 ```
 Then, search the full text of the file for "zero_gradients" and replace "zero_gradients(x)" with" x.grad.zero_ ()"
 
-#### Prepare datasets
+#### 2. Preparing datasets
 The datasets should be downloaded and formatted in `./datasets` as that in `./datasets_dict/tree.txt`.
 
-#### Quick Start
-#### Training your own victim
-In our code, we provide the codes regarding training your own victim. To this end, please run the following command:
+#### 3. Training your victims
+we provide the codes regarding training your victims. To this end, please run the following command:
 ```
-CUDA_VISIBLE_DEVICES=<gpuid> python ./tools/train_backbone.py --dataroot ./datasets/<data> --model backbone --backbone <net> --niter <E> --batch_size <B> --lr 0.1 --name backbone/<data>_<net>
+CUDA_VISIBLE_DEVICES=<gpuid> python ./tools/train_backbone.py --dataroot ./datasets/<data> --model backbone --backbone <net> --niter <e> --batch_size <b> --lr 0.1 --name backbone/<data>_<net>
 ```
 Here, `--name` is to determine where the trained weight of the victim <net> is saved. You should use the above format to set the value of `--name`, or the pre-trained victim could not be found by our code.
 
 After that, the trained weights will be saved at `./checkpoints/backbone/<data>_<net>/latest_net_backbone.pth`, which will be called by the following step.
 
-#### Acknowledgement
+
+#### :gift: Acknowledgement
 This repo is mainly based on the framework of [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). Thanks for their great work.
