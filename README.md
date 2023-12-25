@@ -1,4 +1,4 @@
-## Exploring Effective Data for Surrogate Training Towards Black-box Attack
+## Exploring Effective Data for Surrogate Training Towards Black-box Attack (CVPR'22)
 
 This repo contains the code for our CVPR 2022 paper "[Exploring Effective Data for Surrogate Training Towards Black-Box Attack](https://openaccess.thecvf.com/content/CVPR2022/html/Sun_Exploring_Effective_Data_for_Surrogate_Training_Towards_Black-Box_Attack_CVPR_2022_paper.html)" by Xuxiang Sun, Gong Cheng, Hongda Li, Lei Pei, and Junwei Han.
 > **Abstract:** *Without access to the training data where a black-box victim model is deployed, training a surrogate model for black-box adversarial attack is still a struggle. In terms of data, we mainly identify three key measures for effective surrogate training in this paper. First, we show that leveraging the loss introduced in this paper to enlarge the inter-class similarity makes more sense than enlarging the inter-class diversity like existing methods. Next, unlike the approaches that expand the intra-class diversity in an implicit model-agnostic fashion, we propose a loss function specific to the surrogate model for our generator to enhance the intra-class diversity. Finally, in accordance with the in-depth observations for the methods based on proxy data, we argue that leveraging the proxy data is still an effective way for surrogate training. To this end, we propose a triple-player framework by introducing a discriminator into the traditional data-free framework. In this way, our method can be competitive when there are few semantic overlaps between the scarce proxy data (with the size between 1k and 5k) and the training data. We evaluate our method on a range of victim models and datasets. The extensive results witness the effectiveness of our method.*
@@ -8,12 +8,14 @@ This repo contains the code for our CVPR 2022 paper "[Exploring Effective Data f
 </p>
 
 #### :sparkles: News
+**[Dec 25, 2023]**
+- Codes updating is underway. The codes regarding the 'options' of training victim are updated.
 
 **[Dec 06, 2023]**
-- Codes updating is underway. The codes regarding utils are updated.
+- Codes updating is underway. The codes regarding 'utils' are updated.
 
 **[Nov 27, 2023]**
-- Thanks very much for the attention of many peers! Next, we plan to gradually update our code. It is expected that the code will be updated completely after **a full review cycle of the extended version of our CVPR work** is reached. Please wait patiently.
+- Thanks very much for the attention of peer collages! Next, we plan to gradually update our code. It is expected that the code will be updated completely after **a full review cycle of the extended version of our CVPR work** is reached. Please wait patiently.
 
 #### :blue_book: Citation
 If you think this repository may be helpful to you, please consider giving a star :star: and citation. Thanks for your consideration.
