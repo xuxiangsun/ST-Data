@@ -8,6 +8,9 @@ This repo contains the code for our CVPR 2022 paper "[Exploring Effective Data f
 </p>
 
 #### :sparkles: News
+**[Jan 5, 2024]**
+- Codes updating is underway. The partial codes regarding 'data' are updated.
+
 **[Dec 25, 2023]**
 - Codes updating is underway. The codes regarding the 'options' of training victim are updated.
 
