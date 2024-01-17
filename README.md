@@ -10,7 +10,7 @@ This repo contains the code for our CVPR 2022 paper "[Exploring Effective Data f
 #### :sparkles: News
 **[Jan 17, 2024]**
 - Codes updating is underway. The partial codes regarding 'models' are updated.
-- 
+
 **[Jan 5, 2024]**
 - Codes updating is underway. The partial codes regarding 'data' are updated.
 
