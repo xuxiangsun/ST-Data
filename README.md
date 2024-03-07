@@ -8,6 +8,9 @@ This repo contains the code for our CVPR 2022 paper "[Exploring Effective Data f
 </p>
 
 #### :sparkles: News
+**[Mar 7, 2024]**
+- Codes updating is underway. The partial codes regarding 'models/tinysizemodels' are updated.
+
 **[Feb 1, 2024]**
 - Codes updating is underway. The partial codes regarding 'models/backbone_model' & 'discriminators' are updated.
 
