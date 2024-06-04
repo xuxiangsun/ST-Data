@@ -1,0 +1,4 @@
+{
+    "ngf": 64,
+    "final_act": "tanh"
+  }
