@@ -6,10 +6,10 @@ from PIL import Image
 
 
 
-class CIFAR10Dataset(BaseDataset):
+class STL10Dataset(BaseDataset):
     @staticmethod
     def modify_commandline_options(parser, is_train):
-        parser.set_defaults(load_size=32, crop_size=32, output_nc=3)
+        parser.set_defaults(load_size=96, crop_size=96, output_nc=3)
         if parser.parse_args().classes == 0:
             parser.set_defaults(classes=10)
         try:
@@ -47,15 +47,17 @@ class CIFAR10Dataset(BaseDataset):
                                         transforms.RandomCrop(self.opt.load_size, padding=4),
                                         transforms.RandomHorizontalFlip(),
                                         transforms.RandomRotation(15),
-                                        transforms.ToTensor()
+                                        transforms.ToTensor(),
+                                        transforms.Normalize(mean=[0.5,0.5,0.5], std=[0.5,0.5,0.5])
                                         ])
         else:
             self.transform = transforms.Compose([
                                         transforms.Resize((self.opt.load_size, self.opt.load_size), interpolation=Image.BICUBIC),
-                                        transforms.ToTensor()
+                                        transforms.ToTensor(),
+                                        transforms.Normalize(mean=[0.5,0.5,0.5], std=[0.5,0.5,0.5])
                                         ])      
         self.meanstd = dict(mean=[0.4914, 0.4822, 0.4465], std=[0.2023, 0.1994, 0.2010], axis=-3)
-        self.officialdataset = torchvision.datasets.CIFAR10(root='./datasets/CIFAR10', train=phs, transform=self.transform, download=False)
+        self.officialdataset = torchvision.datasets.STL10(root='./datasets/STL10', split=self.flag, transform=self.transform, download=False)
 
 
 

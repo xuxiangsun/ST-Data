@@ -9,6 +9,15 @@
 │   ├── data_batch_5
 │   ├── readme.html
 │   └── test_batch
+├── STL10
+│ └── stl10_binary
+│   ├── class_names.txt
+│   ├── fold_indices.txt
+│   ├── test_X.bin
+│   ├── test_y.bin
+│   ├── train_X.bin
+│   ├── train_y.bin
+│   └── unlabeled_X.bin
 ├── CIFAR100
 │ └── cifar-100-python
 │   ├── file.txt~
@@ -27,6 +36,15 @@
 │   ├── parts
 │   ├── README
 │   └── train_test_split.txt
+├── datasets_dict
+│   ├── CIFAR100_dict.txt
+│   ├── CIFAR10_dict.txt
+│   ├── CUB_dict.txt
+│   ├── EMNIST_dict.txt
+│   ├── KMNIST_dict.txt
+│   ├── MNIST_dict.txt
+│   ├── places365_dict.txt
+│   └── tinyimagenet_dict.txt
 ├── EMNIST
 │ └──EMNIST
 │   ├── processed

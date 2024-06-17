@@ -8,6 +8,9 @@ This repo contains the code for our CVPR 2022 paper "[Exploring Effective Data f
 </p>
 
 #### :sparkles: News
+**[Jun 17, 2024]**
+- Codes updating is underway. Adding STL10 dataset & Fixing some bugs.
+
 **[Jun 4, 2024]**
 - Codes updating is underway. The partial codes regarding 'configs' and 'data' are updated.
 
