@@ -27,7 +27,7 @@ If you think this repository may be helpful to you, please consider giving a sta
 @article{sun2025stdatav2,
   title={STDatav2: Accessing Efficient Black-Box Stealing for Adversarial Attacks},
   author={Sun, Xuxiang and Cheng, Gong and Li, Hongda and Lang, Chunbo and Han, Junwei},
-  booktitle={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
   volume={47},
   number={4},
   pages={2429--2445},
